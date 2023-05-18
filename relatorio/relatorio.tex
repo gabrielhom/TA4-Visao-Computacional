@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+% Package to make citations superscrit with brackets
+\usepackage[super,square]{natbib}
+% Package to change margin size
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{2cm}
+% Package to make headers
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+% Package for highligths
+\usepackage{soul}
+% Colors for the references links
+\usepackage[dvipsnames]{xcolor}
+% Package to link references
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=CadetBlue,
+    filecolor=CadetBlue,      
+    urlcolor=CadetBlue,
+}
+% Package for lorem ipsum
+\usepackage{lipsum}
+% Package for multicolumn
+\usepackage{multicol}
+\setlength\columnsep{18pt}
+% Sets bastract
+\renewenvironment{abstract}
+ {\par\noindent\textbf{\abstractname}\ \ignorespaces \\}
+ {\par\noindent\medskip}
+
+
+ \renewcommand{\abstractname}{Resumo}
+ 
+\begin{document}
+% Makes header
+\pagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[R]{\textit{Universidade Federal do Paraná -- UFPR}}
+\fancyhead[L]{}
+% Makes footnotes with an asterisk
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+\begin{center}
+\Large{\textbf{Relatório TA4 -- Visão Computacional}}
+\vspace{0.4cm}
+\normalsize
+\\ Gabriel Henrique Oliveira de Mello -- GRR20190602 \\
+\vspace{0.1cm}
+\small{Universidade Federal do Paraná -- UFPR}
+\medskip
+\normalsize
+\end{center}
+{\color{gray}\hrule}
+\vspace{0.4cm}
+\begin{abstract}
+Este relatório detalha o experimento de implementação de um modelo de rede neural usando a biblioteca PyTorch e para classificar as espécies de íris a partir do dataset Iris junto com a comparação com a classificação utilizando KNN.
+O dataset Iris, um conjunto de dados amplamente usado na literatura de aprendizado de máquina, consiste em 150 amostras de íris de três espécies diferentes (setosa, versicolor, virginica), com 50 amostras de cada.
+Cada amostra tem quatro atributos: comprimento da sépala, largura da sépala, comprimento da pétala e largura da pétala.
+O objetivo foi treinar um modelo de aprendizado de máquina para prever corretamente a espécie de uma íris com base nesses quatro atributos e compararar com o resultado da classificação utilizando KNN.
+\end{abstract}
+{\color{gray}\hrule}
+\medskip
+\input{./sections/1_intro.tex}
+\input{./sections/2_section.tex}
+\input{./sections/3_section.tex}
+\input{./sections/4_section.tex}
+\input{./sections/5_conclusion.tex}
+\bibliographystyle{plain}
+\end{document}

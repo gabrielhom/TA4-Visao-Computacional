@@ -1,0 +1,32 @@
+{\color{gray}\hrule}
+\begin{center}
+\section{Os Modelos}
+\end{center}
+{\color{gray}\hrule}
+\begin{multicols}{2}
+\subsection{Rede Neural}
+A rede neural construída para este experimento é uma estrutura composta por várias camadas de nós, ou neurônios, cada um dos quais realiza cálculos simples em seus dados de entrada. Cada neurônio leva múltiplas entradas, multiplica cada entrada por um peso específico, soma todas as entradas ponderadas e, em seguida, aplica uma função de ativação ao resultado para produzir sua saída. Estas saídas então se tornam entradas para os neurônios na próxima camada da rede.
+
+A rede neural é composta de três tipos de camadas: entrada, oculta e saída.
+
+\textbf{Camada de entrada:} É a primeira camada da rede e recebe dados brutos como entrada. Para o nosso modelo, a camada de entrada possui quatro neurônios, correspondendo aos quatro atributos de cada amostra no dataset Iris (comprimento da sépala, largura da sépala, comprimento da pétala, largura da pétala).
+
+\textbf{Camadas ocultas:} São camadas intermediárias entre a entrada e a saída. Elas recebem as entradas da camada anterior e passam suas saídas para a próxima camada. Elas são chamadas de "ocultas" porque não interagem diretamente com o mundo externo. Para o nosso modelo, utilizamos duas camadas ocultas. A quantidade de neurônios nessas camadas pode variar dependendo do design da rede e a complexidade do problema a ser resolvido.
+
+\textbf{Camada de saída:} É a última camada da rede. Ela recebe entradas das camadas ocultas e produz a saída final da rede. Para o nosso modelo, a camada de saída tem três neurônios, correspondendo às três espécies de íris que queremos prever (setosa, versicolor, virginica).
+
+Esse tipo de modelo de rede neural, com múltiplas camadas de neurônios e retropropagação, é conhecido como uma rede neural multicamadas (Multilayer Perceptron, ou MLP). São modelos poderosos que podem aprender representações complexas dos dados.
+\subsection{KNN (K-Nearest Neighbors)}
+
+O k-Nearest Neighbors (KNN) é um algoritmo de aprendizado de máquina simples e intuitivo que é amplamente usado em classificação e regressão. É um algoritmo do tipo "lazy learner", pois não aprende uma função discriminativa a partir do conjunto de treinamento, mas memoriza o conjunto de treinamento em vez disso.
+
+A ideia principal por trás do KNN é que os exemplos de treinamento são distribuídos em um espaço n-dimensional, onde n é o número de características no dataset. Quando recebemos um exemplo não rotulado para classificação (ou regressão), o algoritmo KNN identifica os 'k' exemplos de treinamento mais próximos a este exemplo não rotulado. A "proximidade" é normalmente medida usando uma métrica de distância, como a distância euclidiana ou a distância de Manhattan.
+
+Na classificação, o KNN atribui ao exemplo não rotulado a classe mais comum entre seus vizinhos mais próximos.
+
+O número 'k' de vizinhos considerados é um hiperparâmetro importante para o algoritmo KNN e precisa ser cuidadosamente escolhido. Um 'k' muito pequeno torna o algoritmo sensível a exemplos de treinamento ruidosos, enquanto um 'k' muito grande torna o algoritmo insensível às variações locais dos exemplos de treinamento.
+
+No nosso experimento, utilizamos o algoritmo KNN do Scikit-Learn para classificar as espécies de íris a partir do dataset Iris com k = 3.
+\end{multicols}
+
+

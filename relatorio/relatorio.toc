@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introdução}{1}{section.1}%
+\contentsline {section}{\numberline {2}O Dataset Iris}{2}{section.2}%
+\contentsline {section}{\numberline {3}Os Modelos}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Rede Neural}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}KNN (K-Nearest Neighbors)}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Treinamento e desempenho dos modelos}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Treinamento da Rede Neural}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Desempenho dos modelos}{3}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Conclusão}{3}{section.5}%
